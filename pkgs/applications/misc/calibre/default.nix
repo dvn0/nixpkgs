@@ -23,6 +23,7 @@
 , qtwayland
 , removeReferencesTo
 , sqlite
+, wrapGAppsHook
 , wrapQtAppsHook
 , xdg-utils
 , unrarSupport ? false
@@ -71,6 +72,7 @@ stdenv.mkDerivation rec {
     pkg-config
     qmake
     removeReferencesTo
+    wrapGAppsHook
     wrapQtAppsHook
   ];
 
